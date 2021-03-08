@@ -7,7 +7,7 @@ export function ListaTareas(props) {
 		<div>
 			{props.addTask.map((tarea, i) => {
 				return (
-					<div className="addedItems" key={i}>
+					<div className="items" key={i}>
 						<ul>
 							<li>{tarea.item}</li>
 						</ul>
