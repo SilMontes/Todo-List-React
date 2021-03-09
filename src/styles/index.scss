@@ -8,41 +8,59 @@ p{
     font-weight: lighter;
     color:red;
 }
-.addTareas{
+.formDiv{
     margin: auto;
     max-width: 800px;
     width: 90%;
     text-align: center;
+    background: #f4f4f4;
+    font-size: 25px;
+     box-shadow: 5px 5px #f4f4f4, 10px 10px #c3c3c3, 15px 15px #c3c3c3
 }
 
-.tareas{
-    margin: auto;
-}
 input{
     margin-bottom:20px;
     padding:10px;
     width: 70%;
     border:none;
     outline: none;
+    margin-top: 20px;
 }
 
-// .addedItems{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 10px;
-// }
-// .addedItems li{
-//     margin: 0;
-//     font-family: fantasy;
-// }
-// .addedItems button{
-//     width: 15x;
-//     height: 15px;
-//     border-radius: 50%;
-//     padding: 2px;
-//     font-size: 10px;
-// } 
+ .listaDiv{
+    padding: 10px;
+}
+.listaDiv .lista{
+    display: block;
+}
+.listaDiv li{
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+.lista{
+    height: 50px;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px;
+}
+
+.listaDiv .lista button{
+   text-align: center;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   justify-content: center;
+   font-size: 10px;
+   padding:2px;
+   color:blue;
+   float: right;
+   border-color: blue;
+   background: turquoise;
+ } 
+#pushpin{
+     color:blue;
+     padding-right: 10px;
+ }
 /* 
 
     You can write your own styles here...
