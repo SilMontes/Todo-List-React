@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export function ListaTareas(props) {
 	const deleteTask = index => {
-		const newList = props.list.filter(indexit => {
+		const newList = props.list.filter((item, indexit) => {
 			return indexit != index;
 		});
 

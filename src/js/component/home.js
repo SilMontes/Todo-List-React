@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import { ListaTareas } from "./listatareas";
-
+import swal from "sweetalert";
 //create your first component
 export function Home() {
+	const myAlert = () => {
+		swal({
+			title: "Oops!",
+			text: "Need to add a task",
+			icon: "warning",
+			button: "Okay!"
+		});
+	};
 	const [list, setList] = useState([]);
 	const [task, setTask] = useState("");
 
 	const handleSubmit = e => {
 		e.preventDefault();
 		if (task === "") {
-			alert("Nedd to add task");
+			myAlert();
 		} else {
 			setList([...list, task]);
 		}
